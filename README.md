@@ -1,4 +1,4 @@
-# vissualise_your_neural_network
+# Vissualise your neural network
 Create an amazing large format visualisation of a neural network for wall posters
 ## What
 This simple app takes your input image and colour settings to create a beautiful image of  
@@ -17,3 +17,6 @@ If you want to play around with the code yourself, feel free to clone the repo.
 ## Homepage
 Your app should look something like this on the browser: 
 ![Homepage](/public/homepage.png)
+
+## Credits
+- Brandon Rohrer : https://e2eml.school/
