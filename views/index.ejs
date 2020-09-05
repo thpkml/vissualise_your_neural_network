@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Network Visualisation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="ui center aligned fluid container" style="padding: 10px 150px;">
+        <br>
+        <div class="ui huge dividing header">Visualise Your Neural Network</div>
+        <form class="ui form" method="POST" action="/vis" enctype="multipart/form-data">
+            <p>Build a visualization of an image autoencoder neural network, piece by piece.
+            </p>
+            <div class="ui five fields">
+                <div class="ui field">
+                    <div class="label">Upload image:</div>
+                    <input type="file" name="inputImage">
+                </div>
+                <div class="ui field">
+                    <div class="label">Output quality DPI:</div>
+                    <input type="text" name="settings[dpi]" value="300">
+                </div>
+                <div class="ui field">
+                    <div class="label">Background color:</div>
+                    <input type="color" name="settings[bg]" value="#000000">
+                </div>
+                <div class="ui field">
+                    <div class="label">Image border:</div>
+                    <input type="color" name="settings[imgBorder]" value="#e2debb">
+                </div>
+                <div class="ui field">
+                    <div class="label">Edge color:</div>
+                    <input type="color" name="settings[edge]" value="#444444">
+                </div>
+                <div class="ui field">
+                    <div class="label">Positive connection:</div>
+                    <input type="color" name="settings[pos]" value="#ff7f50">
+                </div>
+                <div class="ui field">
+                    <div class="label">Negative connection:</div>
+                    <input type="color" name="settings[neg]" value="#00baff">
+                </div>
+            </div>
+            <div class="ui field">
+                <input class="ui fluid button" type="submit" value="Create Visualisation">
+            </div>
+        </form>
+        <div class="ui segment">
+            <div class="ui small dividing header">Output
+                <span style="float:right;">
+                    <a href="/">refresh</a> | 
+                    <a href="/download">download</a>
+                </span>
+            </div>
+            <img src="../output.png" alt="" width="100%" height="auto">
+        </div>
+    </div>
+</body>
+</html>
