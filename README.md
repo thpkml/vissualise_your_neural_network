@@ -10,11 +10,11 @@ If you want to play around with the code yourself, feel free to clone the repo.
 - check the python file vis.py and make sure you have the required python modules (virtual env. recommended)
 - node app.js (to run the app on localhost port 3000) 
 
-## What
+## Tech
 - Node.js: (Express.js, EJS, Semantic UI, Multer, child_process etc.)
 - Python: (Matplotlib, Numpy, PIL, json etc.)
 
-## Homepage
+## Demo
 Your app should look something like this on the browser: 
 ![Homepage](/public/homepage.png)
 
