@@ -1,5 +1,6 @@
 # Visualise your neural network
 Create an amazing large format visualisation of a neural network for wall posters
+[See how it works](https://www.youtube.com/watch?v=RggBi9xatUk&ab_channel=purpleturtledotcom)
 ## What
 This simple app takes your input image and colour settings to create a beautiful image of  
 neural network with connections. The resulting output can be downloaded as a huge 4800px wide image if you want to print it for a wall poster. 
