@@ -1,4 +1,4 @@
-# Vissualise your neural network
+# Visualise your neural network
 Create an amazing large format visualisation of a neural network for wall posters
 ## What
 This simple app takes your input image and colour settings to create a beautiful image of  
